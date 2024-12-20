@@ -17,7 +17,7 @@ const SubscriptionButton:React.FC<SubscriptionButtonProps> = ({className,isPro})
     const {toast} = useToast()
     const handleSubcribe = async ()=>{
         try {
-            window.open('https://firstledger.net/', '_blank');
+            window.open('https://firstledger.net/token/rsuu5JhhSHWYoVQeGDs9NTwwUS6UHJZY4w/436F70696C6F7400000000000000000000000000', '_blank');
 
             return
             setLoading(true)
