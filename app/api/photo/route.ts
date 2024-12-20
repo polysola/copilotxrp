@@ -34,7 +34,7 @@ export async function POST(req: Request) {
             prompt,
             n: Number(amount),
             size: resolution,
-            style
+            style: "vivid"
         });
 
         // Race between API call and timeout

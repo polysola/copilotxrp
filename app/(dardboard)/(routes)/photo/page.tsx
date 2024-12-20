@@ -196,14 +196,14 @@ const PhotoPage = () => {
                                   <Button
                                     onClick={() => onEdit(url)}
                                     size="sm"
-                                    className="w-24"
+                                    className="w-24 hidden"
                                   >
                                     Edit
                                   </Button>
                                   <Button
                                     onClick={() => OnVariation(url)}
                                     size="sm"
-                                    className="w-24"
+                                    className="w-24 hidden"
                                   >
                                     Variation
                                   </Button>
