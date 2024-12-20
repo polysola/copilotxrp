@@ -255,10 +255,8 @@ const XRPTool = () => {
           const txData = tx.tx_json;
           const meta = tx.meta;
           
-  
           const direction = txData.Account === walletAddress ? '➡️ Out' : '⬅️ In';
           
-        
           let amount = 'N/A';
           if (meta.delivered_amount) {
             if (typeof meta.delivered_amount === 'string') {
@@ -282,8 +280,9 @@ const XRPTool = () => {
             }
           }
 
-          // Convert timestamp
-          const timestamp = new Date(tx.close_time_iso).toLocaleString();
+          // Convert timestamp to UTC
+          const utcDate = new Date(tx.close_time_iso);
+          const timestamp = utcDate.toUTCString();
 
           return {
             type: txData.TransactionType,

@@ -12,7 +12,7 @@ const configuration = {
 
 const instructionMessage = {
     role: "system",
-    content: "You are Copilot AI on XRP."
+    content: "You are Copilot XRP AI on XRPL."
 };
 const openai = new OpenAI(configuration)
 
