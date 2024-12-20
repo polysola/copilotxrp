@@ -30,7 +30,7 @@ export interface ToolItemProps {
   title: string;
   url: string;
   color?: string;
-  slug: "code" | "audio" | "video" | "photo" | "conversation";
+  slug: "code" | "audio" | "tools" | "photo" | "conversation";
 }
 
 const ToolItem: React.FC<ToolItemProps> = ({ icon, title, url, slug }) => {

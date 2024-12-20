@@ -1,46 +1,45 @@
 import { ToolItemProps } from "./components/dashboard/tools-item";
 
-
-
-
-export const TOOLS: ToolItemProps = [
+// Không cần khai báo lại ToolItemProps ở đây
+export const TOOLS: ToolItemProps[] = [
   {
     title: "Conversation",
     icon: "/icons/conversation.svg",
     url: "/conversation",
     color: "bg-blue-500",
-    slug: "conversation"
+    slug: "conversation",
   },
   {
     title: "Photo generation",
     icon: "/icons/photo.svg",
     url: "/photo",
     color: "bg-violet-500",
-    slug: "photo"
+    slug: "photo",
   },
   {
     title: "XRPL Tools",
     icon: "/icons/video.svg",
     url: "/tools",
     color: "bg-amber-500",
-    slug: "tools"
+    slug: "tools",
   },
   {
     title: "Audio generation",
     icon: "/icons/audio.svg",
     url: "/audio",
     color: "bg-orange-500",
-    slug: "audio"
+    slug: "audio",
   },
   {
     title: "Code generation",
     icon: "/icons/code.svg",
     url: "/code",
     color: "bg-green-500",
-    slug: "code"
+    slug: "code",
   },
 ];
 
+// Định nghĩa NAVIGATIONS
 export const NAVIGATIONS = [
   {
     title: "Dashboard",
@@ -48,8 +47,9 @@ export const NAVIGATIONS = [
     url: "/dashboard",
     slug: "dashboard"
   },
-  ...TOOLS,
+  ...TOOLS, // TOOLS là một mảng hợp lệ và có kiểu ToolItemProps[]
 ];
+
 
 export const THEME_MODES = [
   {
