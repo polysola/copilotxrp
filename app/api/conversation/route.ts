@@ -12,7 +12,7 @@ const configuration = {
 
 const instructionMessage = {
     role: "system",
-    content: "You are GitHub Copilot AI on Solana."
+    content: "You are Copilot AI on XRP."
 };
 const openai = new OpenAI(configuration)
 
